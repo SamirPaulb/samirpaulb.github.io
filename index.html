@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="5;url=https://samir.pages.dev">
+    
+    <!-- SEO-Friendly Redirect -->
+    <link rel="canonical" href="https://samir.pages.dev">
+    
+    <!-- JavaScript Redirect -->
+    <script>
+        (function () {
+            const oldDomain = "samirpaulb.github.io";
+            const newDomain = "samir.pages.dev";
+            const currentUrl = window.location.href;
+
+            if (currentUrl.includes(oldDomain)) {
+                const newUrl = currentUrl.replace(oldDomain, newDomain);
+                window.location.replace(newUrl);
+            }
+        })();
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Redirecting...</h2>
+    <p>If you are not redirected automatically, <a id="redirectLink" href="#">click here</a>.</p>
+
+    <script>
+        document.getElementById("redirectLink").href = window.location.href.replace("samirpaulb.github.io", "samir.pages.dev");
+    </script>
+</body>
+</html>
